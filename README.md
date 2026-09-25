@@ -28,10 +28,10 @@ Este proyecto fue desarrollado como primer trabajo grupal del bootcamp de **Roll
 
 ## 🛠️ Tecnologías
 
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura semántica del sitio |
-| CSS3 | Estilos personalizados |
+| Tecnología  | Uso                                   |
+| ----------- | ------------------------------------- |
+| HTML5       | Estructura semántica del sitio        |
+| CSS3        | Estilos personalizados                |
 | Bootstrap 5 | Grid, componentes y responsive design |
 
 > ⚠️ Este proyecto es solo de maquetado: no incluye JavaScript propio. Los componentes interactivos (modales, carousel, navbar) funcionan con el JS que trae Bootstrap por defecto.
@@ -43,13 +43,13 @@ BiblioRed/
 ├── index.html
 ├── pages/
 │   ├── contacto.html
-│   ├── nosotros.html
+│   ├── entrada-blog.html
+│   ├── galeria-img.html
 │   ├── login.html
-│   ├── galeria.html
-│   ├── entrada.html
-│   └── 404.html
+│   ├── pag404.html
+│   └── sobre-nosotros.html
 ├── css/
-│   └── styles.css
+│   └── estilos.css
 └── assets/
     ├── img/
     │   └── ...
@@ -63,13 +63,12 @@ El trabajo se organizó en un tablero de **Trello**.
 
 ## 👥 Equipo
 
-| Nombre | Rol |
-|---|---|
-| **Di Berto Staffolani Facundo Luis** | Líder Técnico |
-| **Morhill Samir** | Scrum Master |
-| **Nanni Esteban Nicolás** | Desarrollador |
-| **Gamalero Leiza** | Desarrolladora |
-| **Omonte Paula** | Desarrolladora |
+| Nombre                               | Rol            |
+| ------------------------------------ | -------------- |
+| **Di Berto Staffolani Facundo Luis** | Líder Técnico  |
+| **Morhill Samir**                    | Scrum Master   |
+| **Nanni Esteban Nicolás**            | Desarrollador  |
+| **Gamalero Leiza**                   | Desarrolladora |
+| **Omonte Paula**                     | Desarrolladora |
 
-
-------------Hecho con 💜 por el equipo de BiblioRed------------
+<p align="center">Hecho con 💜 por el equipo de BiblioRed</p>
