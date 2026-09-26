@@ -3,3 +3,80 @@
   margin: 0;
   box-sizing: border-box;
 }
+.modal-sus{
+  display: nome;
+}
+.boton-sus{
+display: inline-block;
+background-color: rgb(235, 189, 129);
+color: rgb(0, 0, 0);
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-family: sans-serif;
+}
+.ventana-suscripcion{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.5);
+  z-index: 9999;
+  opacity: 0 ;
+  visibility: hidden ;
+  transition: opacity 0.3s ease;
+}
+.casilla-control:checked ~ .ventana-suscripcion{
+  opacity: 1;
+  visibility: visible ;
+}
+.tarjeta-suscripcion{
+  background-color: beige;
+  max-width: 400px;
+  margin: 10%auto;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 20px rgb(0,0,0,0.2);
+  font-family: sans-serif;
+  color: rgba(39, 14, 4, 0.932)
+}
+.boton-cerrar-sus{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #360505;
+}
+
+.formulario-limpio{
+  display: flex;
+  flex-direction: column;
+}
+.formulario-limpio label{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.formulario-limpio input{
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px ;
+  outline: none ;
+}
+.contenedor-botones{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.contenedor-botones button{
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
