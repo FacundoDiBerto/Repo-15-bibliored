@@ -38,7 +38,7 @@
   color: #fff;
   border-radius: 5px;
 }
-  & :focus {
+  &:focus {
     background-color: #1e293b;
     color: #fff;
     border-radius: 5px;
@@ -58,7 +58,18 @@
 .navbar img{
   padding: 0px 10px
 }
-
+.btn-primary {
+  background-color: #e11d48;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 15px;
+}
 /* Breakpoints */
 
 @media (max-width: 992px) {
@@ -67,7 +78,4 @@
   .navbar .tamanio {
     margin: auto;
   }
-
-
-
 }
