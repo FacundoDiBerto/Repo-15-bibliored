@@ -83,10 +83,8 @@
                 >
               </li>
               <li class="nav-item espacio-items">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Suscribirse
-                 </button>
-
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse
+                </button>
               </li>
             </ul>
           </div>
@@ -106,7 +104,7 @@
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header border-0">
         <h1 class="modal-title fs-5" id="staticBackdropLabel FW-bold">Suscripción a Novedades</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -123,10 +121,10 @@
         <label for="email" class="form-label" FW-bold>Correo electrónico</label>
         <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
       </div>
-      <div class="mb-3">
+      <div class="mb-3" >
         <label for="categoria" class="form-label" FW-bold>Categoría preferida</label>
         <select class="form-control" id="categoria">
-          <option value="">Manga, Libro, Revista</option>
+          <option value="" disabled selected hidden>Manga, Libro, Revista</option>
           <option value="1">Manga</option>
           <option value="2">Libro</option>
           <option value="3">Revista</option>
@@ -134,7 +132,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn-primary">Confirmar Suscripción</button>
+        <button type="button" class="btn-primary fw-bold">Confirmar Suscripción</button>
       </div>
     </div>
   </div>
