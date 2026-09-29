@@ -5,22 +5,32 @@
   font-family: "roboto", sans-serif;
 }
 
+/* Base para mobile */
+
 /* Navbar */
 
 .navbar {
   border-bottom: 1px solid #ccc;
-  background-color: #f8f9fa;
-  font-size: 16px;
+  background-color: white;
+  padding: 0px;
 }
 
 .navbar .tamanio {
   width: 200px;
+  margin: auto;
+}
+
+.navbar .nav-botones {
+  color: black;
+  display: flex;
+  gap: 10px;
 }
 
 .navbar .nav-suscribirse {
   background-color: #e11d48;
   color: #fff;
   border-radius: 5px;
+  gap: 10px;
   &:hover {
     background-color: #f02853;
     color: #fff;
@@ -28,54 +38,64 @@
   }
 }
 
-.navbar .nav-botones {
-  color: black;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background-color: #1e293b;
-    color: #fff;
-    border-radius: 5px;
-  }
-  & :focus {
-    background-color: #1e293b;
-    color: #fff;
-    border-radius: 5px;
-  }
+.navbar .espacio-items {
+  margin-left: 5px;
 }
 
-.navbar .activo {
+.navbar .activo1 {
   background-color: #1e293b;
   color: #fff;
   border-radius: 5px;
 }
 
-.navbar .espacio-items {
-  margin-left: 5px;
+.navbar .activo-mobile {
+  color: #e11d48;
 }
 
-.navbar img {
-  padding: 0px 10px;
-}
+/* Breakpoint: Desktop */
 
-/* Breakpoints */
-
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   /* Navbar */
+  .navbar .activo1 {
+    background-color: white;
+    color: black;
+  }
+
+  .navbar .activo {
+    background-color: #1e293b;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .navbar .nav-botones {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #1e293b;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+
   .navbar .tamanio {
-    margin: auto;
+    width: 250px;
+    padding-bottom: 10px;
+  }
+
+  .navbar img {
+    width: auto;
+    object-fit: cover;
   }
 }
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
 
-main {
-  height: 100%;
+/* Iniciar Sesión / PARTE CSS DE SAMIR*/
+@media (max-width: 992px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
 
-  .btn-iniciar-sesion {
+  main .btn-iniciar-sesion {
     background-color: #e11d48;
     color: #fff;
     border-radius: 5px;
