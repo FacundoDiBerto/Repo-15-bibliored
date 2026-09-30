@@ -5,7 +5,7 @@
   font-family: "roboto", sans-serif;
 }
 
-/* Base para mobile */
+/************* Base para mobile *************/
 
 /* Navbar */
 
@@ -52,10 +52,45 @@
   color: #e11d48;
 }
 
-/* Breakpoint: Desktop */
+/************* Pagina principal - Slider *************/
+
+.carousel-inner .carousel-item {
+  height: 100vh;
+  position: relative;
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+  .overlay-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 13, 68, 0.541);
+    z-index: 1;
+
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font-size: 1.25rem;
+    }
+    & .span-badge {
+      font-size: 14px;
+    }
+  }
+
+
+/************ Breakpoint: Desktop *************/
 
 @media (min-width: 992px) {
+
   /* Navbar */
+
   .navbar .activo1 {
     background-color: white;
     color: black;
@@ -86,6 +121,7 @@
     object-fit: cover;
   }
 }
+
 
 /* Iniciar Sesión / PARTE CSS DE SAMIR*/
 @media (max-width: 992px) {
