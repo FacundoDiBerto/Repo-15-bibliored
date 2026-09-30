@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BiblioRed</title>
+    <title>Iniciar Sesión | BiblioRed</title>
     <meta
       name="description"
       content="BiblioRed es un blog sobre manga, cómics, novelas gráficas y literatura fantástica, con reseñas, novedades y recomendaciones de lectura."
@@ -16,7 +16,7 @@
       name="author"
       content="Facundo Di Berto, Samir Morhill, Nicolás Nanni, Leiza Gamalero y Paula Omonte"
     />
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,38 +52,47 @@
           /></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item espacio-items">
                 <a
                   class="nav-link nav-botones"
                   aria-current="page"
                   href="../index.html"
-                  >Inicio</a
                 >
+                  <i class="bi bi-house d-lg-none"></i>Inicio
+                </a>
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="galeria-img.html"
-                  >Galería</a
+                  ><i class="bi bi-book d-lg-none"></i>Galería</a
                 >
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="sobre-nosotros.html"
-                  >Acerca de nosotros</a
+                  ><i class="bi bi-info-circle d-lg-none"></i>Acerca de
+                  nosotros</a
                 >
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="contacto.html"
-                  >Contacto</a
+                  ><i class="bi bi-envelope d-lg-none"></i>Contacto</a
                 >
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-lg-0 my-3 my-lg-0 mx-lg-0">
               <li class="nav-item espacio-items">
-                <a class="nav-link nav-botones activo" href="login.html"
-                  >Iniciar Sesión</a
+                <a
+                  class="nav-link nav-botones activo activo1 activo-mobile justify-content-center my-1"
+                  href="login.html"
+                  ><i class="bi bi-box-arrow-in-right d-lg-none"></i>Iniciar
+                  Sesión</a
                 >
               </li>
               <li class="nav-item espacio-items">
-                <a class="nav-link nav-suscribirse" href="#">Suscribirse</a>
+                <a
+                  class="nav-link nav-suscribirse d-flex justify-content-center my-1"
+                  href="#"
+                  ><i class="bi bi-substack d-lg-none"></i>Suscribirse</a
+                >
               </li>
             </ul>
           </div>
@@ -91,13 +100,13 @@
       </nav>
     </header>
     <main>
-      <div class="container-fluid min-vh-100">
+      <div class="container-fluid">
         <div class="row h-100">
           <div
             class="col-md-6 d-flex align-items-center justify-content-center"
           >
-            <div class="card ">
-              <div class="card-body ">
+            <div class="card">
+              <div class="card-body pt-4 px-4 pb-2">
                 <h5 class="card-title fw-bold text-center">Iniciar Sesión</h5>
                 <p class="card-text">
                   Ingresa con tu usuario y contraseña para acceder a tu cuenta.
@@ -141,28 +150,53 @@
                       Mostrar contraseña
                     </label>
                     <label class="form-check-label">
-                      <a href="#" class="text-decoration-none"
-                        ></a>¿Olvidaste tu contraseña?</a> <!-- Incluir el link al modal -->
+                      <a
+                        href="#"
+                        class="text-decoration-none"
+                        data-bs-toggle="modal"
+                        data-bs-target="#recuperarPasswordModal"
+                        >Olvidaste tu contraseña?</a
+                      >
+                      <!-- Incluir el link al modal -->
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn-iniciar-sesion w-100">
+                <button
+                  type="submit"
+                  class="btn-iniciar-sesion text-white w-100 py-2 mb-3"
+                >
                   Iniciar Sesión
                 </button>
               </div>
-              <div class= "container d-flex justify-content-center gap-3 mb-3"> 
-                  <button type="button" class="btn btn-primary btn-lg">Google</button>
-                  <button  type="button" class="btn btn-secondary btn-lg"><i type="button" class="bi bi-facebook text-center git status">Facebook</i></button>
-                  
+              <div class="d-flex align-items-center mb-3">
+                <hr class="flex-grow-1" />
+                <span class="mx-2 text-muted small">O ACCEDER CON</span>
+                <hr class="flex-grow-1" />
+              </div>
+
+              <div class="row g-2">
+                <div class="col-6">
+                  <button type="button" class="btn btn-light border w-100">
+                    <i class="bi bi-google text-danger"></i> Google
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-light border w-100">
+                    <i class="bi bi-facebook text-primary"></i> Facebook
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 d-none d-md-block p-0">
+          <div
+            class="col-md-6 d-none d-md-block p-0"
+            style="height: 100vh; overflow: hidden"
+          >
             <img
               src="../assets/img/imagen-login.jpg"
-              class="w-100 h-100"
-              style="object-fit: cover"
+              class="img-fluid"
+              style="object-fit: cover; display: block"
             />
           </div>
         </div>
@@ -233,6 +267,48 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="recuperarPasswordModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Recuperar contraseña</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Seguí estos pasos para recuperar el acceso a tu cuenta:</p>
+            <ol class="mb-0">
+              <li class="mb-2">Ingresá el correo con el que te registraste.</li>
+              <li class="mb-2">
+                Vas a recibir un email con un link de restablecimiento.
+              </li>
+              <li class="mb-2">
+                Hacé clic en el link (válido por 30 minutos).
+              </li>
+              <li>Elegí una nueva contraseña y confirmá.</li>
+            </ol>
+          </div>
+
+          <div class="modal-footer">
+            <input
+              type="email"
+              class="form-control me-2"
+              placeholder="tu@correo.com"
+            />
+            <button type="button" class="btn btn-danger">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
