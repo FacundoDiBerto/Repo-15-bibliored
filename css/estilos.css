@@ -47,15 +47,24 @@
   color: #fff;
   border-radius: 5px;
 }
+.navbar .activo-mobile {
+  color: #e11d48;
+}
 .btn-tercery {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #e11d48;
+  color: #fff;
     border-radius: 5px;
   padding: 8px 15px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin-top: 4px;
+  gap: 10px;
+  &:hover {
+    background-color: #f02853;
+    color: #fff;
+    border-radius: 5px;
+  }
 }
 .btn-primary {
   background-color: #e11d48;
