@@ -55,8 +55,9 @@
 /************* Pagina principal - Slider *************/
 
 .carousel-inner .carousel-item {
-  height: 100vh;
+  height: calc(100vh - 67.625px);
   position: relative;
+  top: 0;
   & img {
     height: 100%;
     object-fit: cover;
@@ -78,7 +79,7 @@
     max-width: 80%;
   }
 
-  & h2 {
+  & .p-size {
     font-size: 22px;
     font-weight: 700;
     max-width: 80%;
@@ -130,16 +131,18 @@
   }
 
   /************* Pagina principal - Slider *************/
-
+  .carousel-inner .carousel-item {
+    height: calc(100vh - 86.625px);
+  }
   .overlay-hero {
     & h1 {
       font-size: 48px;
       max-width: 900px;
     }
 
-    & h2 {
-      font-size: 32px;
-      max-width: 700px;
+    & .p-size {
+      font-size: 48px;
+      max-width: 900px;
     }
 
     & p {

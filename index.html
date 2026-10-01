@@ -16,6 +16,14 @@
       name="author"
       content="Facundo Di Berto, Samir Morhill, Nicolás Nanni, Leiza Gamalero y Paula Omonte"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -30,7 +38,8 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <header class="fixed-top">
+    <header class="sticky-top">
+      <!------ NAVBAR ------>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
@@ -100,6 +109,7 @@
       </nav>
     </header>
     <main>
+      <!------ CAROUSEL ------>
       <section>
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner">
@@ -110,7 +120,7 @@
                 alt="imagen de un chico leyendo un libro en la biblioteca"
               />
               <div class="overlay-hero">
-                <section
+                <div
                   class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center"
                 >
                   <span class="badge text-bg-danger span-badge"
@@ -128,7 +138,7 @@
                     <a href="#" class="btn btn-danger">Explorar Catálogo</a>
                     <a href="#" class="btn btn-outline-light">Ver Reseñas</a>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
@@ -138,18 +148,18 @@
                 alt="imagen con comics de superheroes"
               />
               <div class="overlay-hero">
-                <section
+                <div
                   class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-4 text-center px-4"
                 >
                   <span class="badge text-bg-danger span-badge"
                     >CÓMICS · RESEÑAS DESTACADAS</span
                   >
-                  <h2>La Época Dorada y Moderna del Cómic Americano</h2>
+                  <p class="p-size">La Época Dorada y Moderna del Cómic Americano</p>
                   <p>
                     De Batman a Spider-Man: descubrí los arcos argumentales que
                     marcaron historia.
                   </p>
-                </section>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
@@ -159,21 +169,21 @@
                 alt="imagen de una biblioteca con personajes de anime"
               />
               <div class="overlay-hero">
-                <section
+                <div
                   class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center px-4"
                 >
                   <span class="badge text-bg-info span-badge"
                     >MANGA · TENDENCIAS</span
                   >
-                  <h2>
+                  <p class="p-size">
                     Fenómenos del Shonen Oscuro: Acción, Misterio y Nuevas
                     Narrativas
-                  </h2>
+                  </p>
                   <p>
                     Críticas detalladas y recomendaciones de manga contemporáneo
                     y clásico.
                   </p>
-                </section>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
@@ -183,18 +193,18 @@
                 alt="imagen de una biblioteca con libros"
               />
               <div class="overlay-hero">
-                <section
+                <div
                   class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center px-4"
                 >
                   <span class="badge text-bg-info span-badge"
                     >LIBROS · FANTASÍA & CIENCIA FICCIÓN</span
                   >
-                  <h2>Mundos Imposibles: Las Mejores Reseñas Literarias</h2>
+                  <p class="p-size">Mundos Imposibles: Las Mejores Reseñas Literarias</p>
                   <p>
                     Calificá, comentá y encontrá tu próxima gran lectura junto a
                     la comunidad.
                   </p>
-                </section>
+                </div>
               </div>
             </div>
           </div>
