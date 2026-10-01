@@ -16,6 +16,14 @@
       name="author"
       content="Facundo Di Berto, Samir Morhill, Nicolás Nanni, Leiza Gamalero y Paula Omonte"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -31,6 +39,7 @@
   </head>
   <body>
     <header class="sticky-top">
+      <!------ NAVBAR ------>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
@@ -97,36 +106,125 @@
       </nav>
     </header>
     <main>
-       <div class="float-sm-end">pantalla pequeña
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-     </div>
-     <div class="float-md-end">pantalla mediana
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-     </div>
-     <div class="float-lg-end">pantalla grande
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-     </div>
+      <!------ CAROUSEL ------>
+      <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.pexels.com/photos/38255422/pexels-photo-38255422.jpeg"
+                class="d-block w-100"
+                alt="imagen de un chico leyendo un libro en la biblioteca"
+              />
+              <div class="overlay-hero">
+                <div
+                  class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center"
+                >
+                  <span class="badge text-bg-danger span-badge"
+                    >COMUNIDAD LECTORA · BLOG DE RESEÑAS</span
+                  >
+                  <h1>
+                    El punto de encuentro para amantes de los libros, cómics y
+                    manga.
+                  </h1>
+                  <p>
+                    Descubre tu próxima gran lectura y comparte tus reseñas con
+                    la comunidad.
+                  </p>
+                  <div class="d-none d-lg-flex gap-2">
+                    <a href="#" class="btn btn-danger">Explorar Catálogo</a>
+                    <a href="#" class="btn btn-outline-light">Ver Reseñas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/6654177/pexels-photo-6654177.jpeg"
+                class="d-block w-100"
+                alt="imagen con comics de superheroes"
+              />
+              <div class="overlay-hero">
+                <div
+                  class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-4 text-center px-4"
+                >
+                  <span class="badge text-bg-danger span-badge"
+                    >CÓMICS · RESEÑAS DESTACADAS</span
+                  >
+                  <p class="p-size">La Época Dorada y Moderna del Cómic Americano</p>
+                  <p>
+                    De Batman a Spider-Man: descubrí los arcos argumentales que
+                    marcaron historia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/31002131/pexels-photo-31002131.jpeg"
+                class="d-block w-100"
+                alt="imagen de una biblioteca con personajes de anime"
+              />
+              <div class="overlay-hero">
+                <div
+                  class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center px-4"
+                >
+                  <span class="badge text-bg-info span-badge"
+                    >MANGA · TENDENCIAS</span
+                  >
+                  <p class="p-size">
+                    Fenómenos del Shonen Oscuro: Acción, Misterio y Nuevas
+                    Narrativas
+                  </p>
+                  <p>
+                    Críticas detalladas y recomendaciones de manga contemporáneo
+                    y clásico.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/31390421/pexels-photo-31390421.jpeg"
+                class="d-block w-100"
+                alt="imagen de una biblioteca con libros"
+              />
+              <div class="overlay-hero">
+                <div
+                  class="text-white d-flex flex-column justify-content-center align-items-center h-100 gap-2 text-center px-4"
+                >
+                  <span class="badge text-bg-info span-badge"
+                    >LIBROS · FANTASÍA & CIENCIA FICCIÓN</span
+                  >
+                  <p class="p-size">Mundos Imposibles: Las Mejores Reseñas Literarias</p>
+                  <p>
+                    Calificá, comentá y encontrá tu próxima gran lectura junto a
+                    la comunidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="bg-light py-5">
       <div class="container">

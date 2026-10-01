@@ -5,7 +5,7 @@
   font-family: "roboto", sans-serif;
 }
 
-/* Base para mobile */
+/************* Base para mobile *************/
 
 /* Navbar */
 
@@ -82,10 +82,54 @@
 }
 /* Breakpoints */
 
-/* Breakpoint: Desktop */
+/************* Pagina principal - Slider *************/
+
+.carousel-inner .carousel-item {
+  height: calc(100vh - 67.625px);
+  position: relative;
+  top: 0;
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.overlay-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(3, 3, 39, 0.808);
+  z-index: 1;
+
+  & h1 {
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 80%;
+  }
+
+  & .p-size {
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 80%;
+  }
+
+  & p {
+    font-size: 18px;
+    max-width: 80%;
+  }
+
+  & .span-badge {
+    font-size: 16px;
+  }
+}
+
+/************ Breakpoint: Desktop *************/
 
 @media (min-width: 992px) {
   /* Navbar */
+
   .navbar .activo1 {
     background-color: white;
     color: black;
@@ -114,6 +158,36 @@
   .navbar img {
     width: auto;
     object-fit: cover;
+  }
+
+  /************* Pagina principal - Slider *************/
+  .carousel-inner .carousel-item {
+    height: calc(100vh - 86.625px);
+  }
+  .overlay-hero {
+    & h1 {
+      font-size: 48px;
+      max-width: 900px;
+    }
+
+    & .p-size {
+      font-size: 48px;
+      max-width: 900px;
+    }
+
+    & p {
+      font-size: 24px;
+      max-width: 700px;
+    }
+
+    & .span-badge {
+      font-size: 18px;
+    }
+
+    & .btn {
+      font-size: 20px;
+      padding: 8px 20px;
+    }
   }
 }
 
