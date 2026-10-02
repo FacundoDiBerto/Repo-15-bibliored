@@ -52,7 +52,7 @@
   color: #e11d48;
 }
 
-/************* Pagina principal - Slider *************/
+/** Pagina principal - Slider **/
 
 .carousel-inner .carousel-item {
   height: calc(100vh - 67.625px);
@@ -95,6 +95,60 @@
   }
 }
 
+/* Pagina principal - Cards */
+
+.h2-card {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card img {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.badge-cards {
+  background-color: #fff;
+  color: #e11d48;
+  font-size: 16px;
+  padding: 0px;
+}
+
+.tres-puntitos {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-card {
+  background-color: #1e293b;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.pag-color {
+  & .page-link {
+    border: none;
+    color: #1e293b;
+    font-weight: 600;
+  }
+
+  & .page-item.active .page-link {
+    background-color: #1e293b;
+    color: #fff;
+  }
+}
+
+.card-body .bi-calendar-event {
+  color: #e11d48;
+}
+
+.card-body .cal-autor {
+  font-weight: 700;
+}
+
 /************ Breakpoint: Desktop *************/
 
 @media (min-width: 992px) {
@@ -130,7 +184,7 @@
     object-fit: cover;
   }
 
-  /************* Pagina principal - Slider *************/
+  /* Slider */
   .carousel-inner .carousel-item {
     height: calc(100vh - 86.625px);
   }
@@ -158,6 +212,32 @@
       font-size: 20px;
       padding: 8px 20px;
     }
+  }
+
+  /* Cards */
+  .card {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      border: 1px solid #1e293b;
+    }
+    & .btn-card {
+      &:hover {
+        background-color: #f02853;
+        color: #fff;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .flex-lg-row .position-relative {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  .flex-lg-row .card-img-top {
+    width: 100%;
+    height: 100%;
   }
 }
 
