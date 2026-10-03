@@ -86,7 +86,7 @@
                 >
               </li>
               <li class="nav-item espacio-items">
-                 <button type="button" class="btn-tercery"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse
+                 <button type="button" class="btn-tercery container-fluid"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Suscribirse
                  </button>              
                 </li>
             </ul>
@@ -95,15 +95,210 @@
       </nav>
     </header>
     <main>
-     <div class="float-sm-end">pantalla pequeña
+  <style>
+  /* Espaciado entre los botones para que no se vean pegados */
+  .nav-pills .page-item {
+    margin: 0 5px;
+  }
 
-     </div>
-     <div class="float-md-end">pantalla mediana
+  /* Estilo base para tus botones */
+  .nav-pills .page-link {
+    color: #000000;          /* Color de texto azul Bootstrap */
+    background-color: #fff;  /* Fondo blanco por defecto */
+    border: 1px solid #dee2e6; /* Borde sutil */
+    border-radius: 5px;      /* Bordes redondeados */
+    padding: 8px 16px;       /* Espacio interno del botón */
+    transition: all 0.2s ease-in-out; /* Transición suave para el color */
+    text-decoration: none;   /* Quita el subrayado del enlace */
+  }
 
-     </div>
-     <div class="float-lg-end">pantalla grande
+  /* El botón que está activo por defecto (Todos) */
+  .nav-pills .page-link.active {
+    background-color: #000102 !important;
+    color: #fff !important;
+    border-color: #000000;
+  }
 
-     </div>
+  /* Efecto HOVER: Cambia de color al pasar el cursor por encima */
+  .nav-pills .page-link:hover {
+    background-color: #e9ecef; /* Gris claro de Bootstrap */
+    color: #000000;            /* Un azul un poco más oscuro */
+    border-color: #dde1e5;
+  }
+  
+  /* Asegura que el botón activo no cambie de gris al pasar el cursor */
+  .nav-pills .page-link.active:hover {
+    background-color: #000000 !important;
+    color: #fff !important;
+  }
+</style>
+
+<!-- TU CÓDIGO HTML EXACTO -->
+<ul class="nav nav-pills justify-content-center">
+  <li class="page-item">
+    <a class="page-link active" aria-current="page" href="#">Todos</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Mangas</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Comics</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Libros Clásicos</a>
+  </li>
+</ul>
+<section class="container text-center py-4">
+  <div class="row justify-content-center g-4">
+    
+    <!-- Tarjeta 1 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 8 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 9 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 10 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 11 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 12 -->
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="pages/pag404.html" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     </main>
     <footer class="bg-light py-5">
       <div class="container">
