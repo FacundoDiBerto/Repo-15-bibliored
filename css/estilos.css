@@ -185,9 +185,11 @@
 }
 
 /* Pagina 404 */
-.main-404 {
+.main-404 .container-columnas {
   min-height: calc(100vh - 67.66px);
 }
+
+
 
 /************ Breakpoint: Desktop *************/
 
@@ -281,9 +283,24 @@
   }
 
   /* Pagina 404 */
-.main-404 {
+.main-404 .container-columnas {
   min-height: calc(100vh - 85.83px);
+  & .centrar-col{
+    margin-top: 15vh;
+  }
 }
+
+.container-cards-pag404 {
+  padding: 80px 0;
+& .card {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      border: 1px solid #1e293b;
+    }
+  }
+}
+
 }
 
 /* Iniciar Sesión / PARTE CSS DE SAMIR*/
