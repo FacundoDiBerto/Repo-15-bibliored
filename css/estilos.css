@@ -254,8 +254,8 @@
     }
   }
 
-  /* Cards */
-  .card {
+  /* Cards index.html*/
+  .section-cards-index .card {
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.01);
