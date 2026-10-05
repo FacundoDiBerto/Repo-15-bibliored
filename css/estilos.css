@@ -291,7 +291,7 @@
 }
 
 .container-cards-pag404 {
-  padding: 80px 0;
+  padding: 80px;
 & .card {
     transition: all 0.3s ease-in-out;
     &:hover {
