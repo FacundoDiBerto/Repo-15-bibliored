@@ -101,39 +101,34 @@
     margin: 0 5px;
   }
 
-  /* Estilo base para tus botones */
+  /* Estilo base para botones */
   .nav-pills .page-link {
-    color: #000000;          /* Color de texto azul Bootstrap */
-    background-color: #fff;  /* Fondo blanco por defecto */
-    border: 1px solid #dee2e6; /* Borde sutil */
-    border-radius: 5px;      /* Bordes redondeados */
-    padding: 8px 16px;       /* Espacio interno del botón */
-    transition: all 0.2s ease-in-out; /* Transición suave para el color */
-    text-decoration: none;   /* Quita el subrayado del enlace */
+    color: #000000;          
+    background-color: #fff;  
+      border: 1px solid #dee2e6; 
+    border-radius: 5px;      
+    padding: 8px 16px;       
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;   
   }
 
-  /* El botón que está activo por defecto (Todos) */
   .nav-pills .page-link.active {
     background-color: #000102 !important;
     color: #fff !important;
     border-color: #000000;
   }
 
-  /* Efecto HOVER: Cambia de color al pasar el cursor por encima */
   .nav-pills .page-link:hover {
-    background-color: #e9ecef; /* Gris claro de Bootstrap */
-    color: #000000;            /* Un azul un poco más oscuro */
+    background-color: #e9ecef; 
+       color: #000000;            
     border-color: #dde1e5;
   }
   
-  /* Asegura que el botón activo no cambie de gris al pasar el cursor */
   .nav-pills .page-link.active:hover {
     background-color: #000000 !important;
     color: #fff !important;
   }
 </style>
-
-<!-- TU CÓDIGO HTML EXACTO -->
 <ul class="nav nav-pills justify-content-center">
   <li class="page-item">
     <a class="page-link active" aria-current="page" href="#">Todos</a>
