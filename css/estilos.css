@@ -290,17 +290,6 @@
   }
 }
 
-.container-cards-pag404 {
-  padding: 80px;
-& .card {
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.01);
-      border: 1px solid #1e293b;
-    }
-  }
-}
-
 }
 
 /* Iniciar Sesión / PARTE CSS DE SAMIR*/
@@ -313,3 +302,5 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+/* Sobre Nosotros - Paula */
