@@ -183,13 +183,41 @@
 .card-body .cal-autor {
   font-weight: 700;
 }
+.nav-pills .page-item {
+  margin: 0 5px;
+}
+
+.nav-pills .page-link {
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-pills .page-link.active {
+  background-color: #000102;
+  color: #fff;
+  border-color: #000000;
+}
+
+.nav-pills .page-link:hover {
+  background-color: #e9ecef;
+  color: #000000;
+  border-color: #dde1e5;
+}
+
+.nav-pills .page-link.active:hover {
+  background-color: #000000;
+  color: #fff;
+}
 
 /* Pagina 404 */
 .main-404 .container-columnas {
   min-height: calc(100vh - 67.66px);
 }
-
-
 
 /************ Breakpoint: Desktop *************/
 
@@ -283,13 +311,12 @@
   }
 
   /* Pagina 404 */
-.main-404 .container-columnas {
-  min-height: calc(100vh - 85.83px);
-  & .centrar-col{
-    margin-top: 15vh;
+  .main-404 .container-columnas {
+    min-height: calc(100vh - 85.83px);
+    & .centrar-col {
+      margin-top: 15vh;
+    }
   }
-}
-
 }
 
 /* Iniciar Sesión / PARTE CSS DE SAMIR*/
