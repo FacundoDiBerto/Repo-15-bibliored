@@ -66,7 +66,7 @@
     color: #fff;
     border-radius: 5px;
   }
-} 
+}
 .btn-primary {
   background-color: #e11d48;
   color: #ffffff;
@@ -79,8 +79,8 @@
   color: #000000;
   border-radius: 5px;
   font-size: 15px;
-    padding: 2px 10px 2px 10px;
-    font-weight: 750;
+  padding: 2px 10px 2px 10px;
+  font-weight: 750;
 }
 .modal-title {
   font-weight: 800;
@@ -183,6 +183,41 @@
 .card-body .cal-autor {
   font-weight: 700;
 }
+.nav-pills .page-item {
+  margin: 0 5px;
+}
+
+.nav-pills .page-link {
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-pills .page-link.active {
+  background-color: #000102;
+  color: #fff;
+  border-color: #000000;
+}
+
+.nav-pills .page-link:hover {
+  background-color: #e9ecef;
+  color: #000000;
+  border-color: #dde1e5;
+}
+
+.nav-pills .page-link.active:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Pagina 404 */
+.main-404 .container-columnas {
+  min-height: calc(100vh - 67.66px);
+}
 
 /************ Breakpoint: Desktop *************/
 
@@ -249,8 +284,8 @@
     }
   }
 
-  /* Cards */
-  .card {
+  /* Cards index.html*/
+  .section-cards-index .card {
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.01);
@@ -273,6 +308,14 @@
   .flex-lg-row .card-img-top {
     width: 100%;
     height: 100%;
+  }
+
+  /* Pagina 404 */
+  .main-404 .container-columnas {
+    min-height: calc(100vh - 85.83px);
+    & .centrar-col {
+      margin-top: 15vh;
+    }
   }
 }
 
@@ -301,3 +344,88 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+/* PÁGINA CONTACTO */
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+
+
+
+.formulario,
+.ubicacion {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.formulario h2,
+.ubicacion h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+.campo label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #EEF4FF;
+    padding: 11px;
+    border-radius: 3px;
+}
+
+.campo textarea {
+    height: 105px;
+}
+
+.boton-enviar {
+    background-color: #E11D48;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.mapa {
+    width: 100%;
+    height: 160px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.datos p {
+    font-size: 13px;
+    line-height: 1.5;
+ 
+}
+
