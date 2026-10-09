@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BiblioRed</title>
+    <title>Iniciar Sesión | BiblioRed</title>
     <meta
       name="description"
       content="BiblioRed es un blog sobre manga, cómics, novelas gráficas y literatura fantástica, con reseñas, novedades y recomendaciones de lectura."
@@ -16,7 +16,7 @@
       name="author"
       content="Facundo Di Berto, Samir Morhill, Nicolás Nanni, Leiza Gamalero y Paula Omonte"
     />
-    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,46 +52,356 @@
           /></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item espacio-items">
                 <a
                   class="nav-link nav-botones"
                   aria-current="page"
                   href="../index.html"
-                  >Inicio</a
                 >
+                  <i class="bi bi-house d-lg-none"></i>Inicio
+                </a>
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="galeria-img.html"
-                  >Galería</a
+                  ><i class="bi bi-book d-lg-none"></i>Galería</a
                 >
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="sobre-nosotros.html"
-                  >Acerca de nosotros</a
+                  ><i class="bi bi-info-circle d-lg-none"></i>Acerca de
+                  nosotros</a
                 >
               </li>
               <li class="nav-item espacio-items">
                 <a class="nav-link nav-botones" href="contacto.html"
-                  >Contacto</a
+                  ><i class="bi bi-envelope d-lg-none"></i>Contacto</a
                 >
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-lg-0 my-3 my-lg-0 mx-lg-0">
               <li class="nav-item espacio-items">
-                <a class="nav-link nav-botones activo" href="login.html"
-                  >Iniciar Sesión</a
+                <a
+                  class="nav-link nav-botones activo activo1 activo-mobile justify-content-center my-1"
+                  href="login.html"
+                  ><i class="bi bi-box-arrow-in-right d-lg-none"></i>Iniciar
+                  Sesión</a
                 >
               </li>
               <li class="nav-item espacio-items">
-                <a class="nav-link nav-suscribirse" href="#">Suscribirse</a>
+                <button
+                  type="button"
+                  class="btn-tercery container-fluid"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Suscribirse
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="container-fluid mt-3">
+        <div class="row h-100">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="card">
+              <div class="card-body pt-4 px-4 pb-2">
+                <h5 class="card-title fw-bold text-center">Iniciar Sesión</h5>
+                <p class="card-text">
+                  Ingresa con tu usuario y contraseña para acceder a tu cuenta.
+                </p>
+                <form class="form-login">
+                  <div class="mb-3">
+                    <label for="username" class="form-label fw-bold"
+                      >Correo o Usuario de administrador</label
+                    >
+                    <span class="badge text-bg-danger mb-2">REQUERIDO</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Ingresa tu usuario"
+                      minlength="6"
+                      maxlength="254"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label fw-bold"
+                      >Contraseña</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      minlength="8"
+                      maxlength="64"
+                      placeholder="Ingresa tu contraseña"
+                      required
+                    />
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="showPasswordCheck"
+                    />
+                    <div class="container d-flex justify-content-between">
+                      <label class="form-check-label" for="showPasswordCheck">
+                        Mostrar contraseña
+                      </label>
+                      <label class="form-check-label">
+                        <a
+                          href="#"
+                          class="text-decoration-none"
+                          data-bs-toggle="modal"
+                          data-bs-target="#recuperarPasswordModal"
+                          >Olvidaste tu contraseña?</a
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn-iniciar-sesion text-white w-100 py-2 mb-3"
+                  >
+                    Iniciar Sesión
+                  </button>
+                  <div class="d-flex align-items-center mb-3">
+                    <hr class="flex-grow-1" />
+                    <span class="mx-2 text-muted small">O ACCEDER CON</span>
+                    <hr class="flex-grow-1" />
+                  </div>
+
+                  <div class="row g-2 text-center">
+                    <div class="col-6">
+                      <a href="./pag404.html">
+                        <button
+                          type="button"
+                          class="btn btn-light border w-100 mb-3"
+                        >
+                          <i class="bi bi-google text-danger"></i> Google
+                        </button>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="./pag404.html">
+                        <button
+                          type="button"
+                          class="btn btn-light border w-100 mb-3"
+                        >
+                          <i class="bi bi-facebook text-primary"></i> Facebook
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 d-none d-md-block p-0"
+            style="height: 100vh; overflow: hidden"
+          >
+            <img
+              src="../assets/img/imagen-login.jpg"
+              class="img-fluid"
+              alt="Imagen de inicio de sesión"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
+            <img
+              src="../assets/img/logo-bibliored.png"
+              alt="BiblioRed"
+              class="mb-3"
+            />
+            <p class="text-muted">
+              Librería y archivo crítico especializado en manga, cómics y
+              novelas gráficas contemporáneas. Un punto de encuentro editorial
+              para coleccionistas y lectores entusiastas.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-3">Redes Sociales</h5>
+            <p class="text-muted">
+              Sigue nuestra comunidad de lectores y novedades semanales.
+            </p>
+            <div class="d-flex gap-2 text-center justify-content-center">
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
+                ><i class="bi bi-discord"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <h5 class="fw-bold mb-3">Tienda y Enlaces</h5>
+            <p class="mb-2">
+              <strong>Ubicación:</strong> Gral. José María Paz 576, T4000 San
+              Miguel de Tucumán, Tucumán
+            </p>
+            <p class="mb-2">
+              <strong>Horario:</strong> Lun - Sáb: 10:00 - 20:30 | Dom: 11:00 -
+              15:00
+            </p>
+            <p class="mb-2">
+              <strong>Boletín:</strong> Entregas semanales sobre reediciones y
+              lanzamientos.
+            </p>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+        <div class="text-center text-muted small pb-2">
+          © 2024 BiblioRed S.L. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+    <!-- Modal para recuperar contraseña  -->
+    <div
+      class="modal fade"
+      id="recuperarPasswordModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Recuperar contraseña</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Seguí estos pasos para recuperar el acceso a tu cuenta:</p>
+            <ol class="mb-0">
+              <li class="mb-2">Ingresá el correo con el que te registraste.</li>
+              <li class="mb-2">
+                Vas a recibir un email con un link de restablecimiento.
+              </li>
+              <li class="mb-2">
+                Hacé clic en el link (válido por 30 minutos).
+              </li>
+              <li>Elegí una nueva contraseña y confirmá.</li>
+            </ol>
+          </div>
+
+          <div class="modal-footer">
+            <input
+              type="email"
+              class="form-control me-2"
+              placeholder="tu@correo.com"
+            />
+            <a href="./pag404.html" class="btn btn-danger">Enviar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal para suscripción a novedades -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">
+              Suscripción a Novedades
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="text-justify p-3">
+            Recibe notificaciones inmediatas sobre nuevos tomos, mangas
+            limitados y reseñas
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="nombre" class="form-label FW-bold"
+                >Nombre Completo</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Tu nombre o alias de lector"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold"
+                >Correo electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="ejemplo@correo.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="categoria" class="form-label fw-bold"
+                >Categoría preferida
+              </label>
+              <select class="form-control" id="categoria">
+                <option value="" disabled selected hidden>
+                  Manga, Libro, Revista
+                </option>
+                <option value="1">Manga</option>
+                <option value="2">Libro</option>
+                <option value="3">Revista</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger bg-white text-black border-dark"
+              >
+                Cancelar
+              </button>
+              <button type="button" class="btn btn-danger">
+                Confirmar Suscripción
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
