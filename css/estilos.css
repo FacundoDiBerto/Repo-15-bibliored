@@ -412,6 +412,160 @@
 .datos p {
     font-size: 13px;
     line-height: 1.5;
+
  
 }
-/* Sobre Nosotros - Paula */
+  /* columna dos  */
+  /* BUSQUEDA EDITORIAL Y CATEGORIAS */
+
+.panel-editorial {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 4px;
+    background-color: #f8f9fd;
+    font-family: Arial, sans-serif;
+    color: #111827;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* RECUADROS BLANCOS */
+
+.panel-editorial .busqueda-editorial,
+.panel-editorial .categorias-editorial {
+    background-color: #ffffff;
+    border: 1px solid #d9e2f0;
+    border-radius: 12px;
+    padding: 22px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* TITULOS */
+
+.panel-editorial h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/* ICONOS ROSAS */
+
+.panel-editorial .icono-rojo {
+    color: #e11d48;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* TEXTO DE BUSQUEDA */
+
+.panel-editorial .busqueda-editorial p {
+    color: #5b6470;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0;
+    text-align: left;
+}
+
+/* BUSCADOR */
+
+.panel-editorial .form-busqueda {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.panel-editorial .form-busqueda input {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    height: 52px;
+    padding: 0 16px;
+    background-color: #eef4ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #111827;
+    box-sizing: border-box;
+}
+
+/* BOTON ROSA */
+
+.panel-editorial .form-busqueda button {
+    flex: 0 0 63px;
+    height: 52px;
+    background-color: #e11d48;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.panel-editorial .form-busqueda button:hover {
+    background-color: #be123c;
+}
+
+/* ENCABEZADO CATEGORIAS */
+
+.panel-editorial .encabezado-categorias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d9e2f0;
+}
+
+.panel-editorial .total-generos {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111827;
+    white-space: nowrap;
+}
+
+/* LISTA DE CATEGORIAS */
+
+.panel-editorial .lista-categorias {
+    padding-top: 8px;
+}
+
+.panel-editorial .categoria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 55px;
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #111827;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* NUMEROS CELESTES */
+
+.panel-editorial .cantidad {
+    display: inline-block;
+    background-color: #eef4ff;
+    color: #111827;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
