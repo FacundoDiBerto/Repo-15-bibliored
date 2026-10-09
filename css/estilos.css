@@ -329,7 +329,9 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
+.btn-verDetalles-galeria {
+  font-size: 15px;
+}
 /* PÁGINA CONTACTO */
 
 .titulo {
