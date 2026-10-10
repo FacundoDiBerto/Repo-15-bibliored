@@ -103,7 +103,7 @@
       </nav>
     </header>
     <main>
-      <div class="container-fluid mt-3">
+      <div class="container-fluid">
         <div class="row h-100">
           <div
             class="col-md-6 d-flex align-items-center justify-content-center"
@@ -117,9 +117,10 @@
                 <form class="form-login">
                   <div class="mb-3">
                     <label for="username" class="form-label fw-bold"
-                      >Correo o Usuario de administrador</label
+                      >Usuario o Correo electrónico</label
                     >
-                    <span class="badge text-bg-danger mb-2">REQUERIDO</span>
+                    <span class="text-danger mb-2">*</span>
+                    <!-- <span class="badge text-bg-danger mb-2">REQUERIDO</span> -->
                     <input
                       type="text"
                       class="form-control"
@@ -134,6 +135,7 @@
                     <label for="password" class="form-label fw-bold"
                       >Contraseña</label
                     >
+                    <span class="text-danger mb-2">*</span>
                     <input
                       type="password"
                       class="form-control"
@@ -179,20 +181,24 @@
 
                   <div class="row g-2 text-center">
                     <div class="col-6">
-                      <button
-                        type="button"
-                        class="btn btn-light border w-100 mb-3"
-                      >
-                        <i class="bi bi-google text-danger"></i> Google
-                      </button>
+                      <a href="./pag404.html">
+                        <button
+                          type="button"
+                          class="btn btn-light border w-100 mb-3"
+                        >
+                          <i class="bi bi-google text-danger"></i> Google
+                        </button>
+                      </a>
                     </div>
                     <div class="col-6">
-                      <button
-                        type="button"
-                        class="btn btn-light border w-100 mb-3"
-                      >
-                        <i class="bi bi-facebook text-primary"></i> Facebook
-                      </button>
+                      <a href="./pag404.html">
+                        <button
+                          type="button"
+                          class="btn btn-light border w-100 mb-3"
+                        >
+                          <i class="bi bi-facebook text-primary"></i> Facebook
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </form>
@@ -201,12 +207,11 @@
           </div>
 
           <div
-            class="col-md-6 d-none d-md-block p-0"
-            style="height: 100vh; overflow: hidden"
+            class="col-md-6 d-none d-md-block p-0 m-0 vh-100 overflow-hidden"
           >
             <img
               src="../assets/img/imagen-login.jpg"
-              class="img-fluid"
+              class="w-100 h-100 object-fit-cover"
               alt="Imagen de inicio de sesión"
             />
           </div>
@@ -236,19 +241,19 @@
               Sigue nuestra comunidad de lectores y novedades semanales.
             </p>
             <div class="d-flex gap-2 text-center justify-content-center">
-              <a href="#" class="btn btn-light rounded-circle"
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
                 ><i class="bi bi-facebook"></i
               ></a>
-              <a href="#" class="btn btn-light rounded-circle"
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
                 ><i class="bi bi-twitter-x"></i
               ></a>
-              <a href="#" class="btn btn-light rounded-circle"
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
                 ><i class="bi bi-instagram"></i
               ></a>
-              <a href="#" class="btn btn-light rounded-circle"
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
                 ><i class="bi bi-youtube"></i
               ></a>
-              <a href="#" class="btn btn-light rounded-circle"
+              <a href="./pag404.html" class="btn btn-light rounded-circle"
                 ><i class="bi bi-discord"></i
               ></a>
             </div>
@@ -257,7 +262,8 @@
           <div class="col-lg-4 col-md-12 col-sm-12">
             <h5 class="fw-bold mb-3">Tienda y Enlaces</h5>
             <p class="mb-2">
-              <strong>Ubicación:</strong> Gral. José María Paz 576, T4000 San Miguel de Tucumán, Tucumán
+              <strong>Ubicación:</strong> Gral. José María Paz 576, T4000 San
+              Miguel de Tucumán, Tucumán
             </p>
             <p class="mb-2">
               <strong>Horario:</strong> Lun - Sáb: 10:00 - 20:30 | Dom: 11:00 -
@@ -314,7 +320,7 @@
               class="form-control me-2"
               placeholder="tu@correo.com"
             />
-            <button type="button" class="btn btn-danger">Enviar</button>
+            <a href="./pag404.html" class="btn btn-danger">Enviar</a>
           </div>
         </div>
       </div>
