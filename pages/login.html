@@ -103,7 +103,7 @@
       </nav>
     </header>
     <main>
-      <div class="container-fluid mt-3">
+      <div class="container-fluid">
         <div class="row h-100">
           <div
             class="col-md-6 d-flex align-items-center justify-content-center"
@@ -117,9 +117,10 @@
                 <form class="form-login">
                   <div class="mb-3">
                     <label for="username" class="form-label fw-bold"
-                      >Correo o Usuario de administrador</label
+                      >Usuario o Correo electrónico</label
                     >
-                    <span class="badge text-bg-danger mb-2">REQUERIDO</span>
+                    <span class="text-danger mb-2">*</span>
+                    <!-- <span class="badge text-bg-danger mb-2">REQUERIDO</span> -->
                     <input
                       type="text"
                       class="form-control"
@@ -134,6 +135,7 @@
                     <label for="password" class="form-label fw-bold"
                       >Contraseña</label
                     >
+                    <span class="text-danger mb-2">*</span>
                     <input
                       type="password"
                       class="form-control"
@@ -205,12 +207,11 @@
           </div>
 
           <div
-            class="col-md-6 d-none d-md-block p-0"
-            style="height: 100vh; overflow: hidden"
+            class="col-md-6 d-none d-md-block p-0 m-0 vh-100 overflow-hidden"
           >
             <img
               src="../assets/img/imagen-login.jpg"
-              class="img-fluid"
+              class="w-100 h-100 object-fit-cover"
               alt="Imagen de inicio de sesión"
             />
           </div>
